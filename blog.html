@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answering questions</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        table,
+
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        th {
+            text-align: center;
+            border: 1px solid black;
+        }
+        .go-to-main-html-btn{
+            text-align: center;
+            background-color: green;
+            color: white;
+            position: absolute;
+            left: 50%;
+            border-radius: 4px;
+            height: 50px;
+            font-size: 20px;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>1.Difference among map(), filter(), find() and forEach().</h1>
+        <table style="width: 100%;">
+            <tr>
+                <th>map()</th>
+                <th>filter()</th>
+                <th>forEach()</th>
+                <th>find()</th>
+            </tr>
+            <tr>
+                <td>Creates a new array</td>
+                <td>The filter() method creates a new array filled with elements that pass a test provided by a function
+                </td>
+                <td>The forEach() method calls a function for each element in an array.</td>
+                <td>The find() method returns the value of the first element that passes a test.
+                </td>
+            </tr>
+            <tr>
+                <td>Doesn't execute the function for empty elements</td>
+                <td>The filter() method does not execute the function for empty elements.</td>
+                <td>The forEach() method is not executed for empty elements.</td>
+                <td>The find() method executes a function for each array element.</td>
+            </tr>
+            <tr>
+                <td>Doesn't change original array.</td>
+                <td>The filter() method does not change the original array.</td>
+                <td>Syntax: array.forEach(function(currentValue, index, arr), thisValue)</td>
+                <td>The find() method returns undefined if no elements are found.</td>
+            </tr>
+            <tr>
+                <td>Syntax: array.map(function(currentValue, index, arr), thisValue)</td>
+                <td>Syntax: array.filter(function(currentValue, index, arr), thisValue)</td>
+                <td>Return value undefined.</td>
+                <td>The find() method does not execute the function for empty elements.</td>
+            </tr>
+        </table>
+
+    </section>
+    <section>
+        <h1>2.Difference among local storage, session storage and cookies</h1>
+        <table style="width: 100%;">
+            <tr>
+                <th>Local storage</th>
+                <th>Session storage</th>
+                <th>Cookies</th>
+            </tr>
+            <tr>
+                <td>Data stored in local storage persists even after the browser is closed and reopened. It has no
+                    expiration date by default and remains available until explicitly removed by the web application or
+                    the user.</td>
+                <td>Data stored in session storage is only available for the duration of a single page session. When the
+                    user closes the browser tab or window, the session storage data is automatically cleared.</td>
+                <td>JavaScript cookies are small pieces of data that can be stored in a user's web browser. They are
+                    commonly used for various purposes in web development, such as remembering user preferences,
+                    tracking user behavior, and maintaining session information.</td>
+            </tr>
+            <tr>
+                <td>Local storage typically has a larger storage limit compared to session storage. Browsers often allow
+                    at least 5-10 MB of storage space per domain for local storage.</td>
+                <td>Session storage typically has a smaller storage limit compared to local storage. Browsers usually
+                    provide around 5-10 MB of storage space per domain for session storage.</td>
+                <td>Cookies are typically limited to a few kilobytes in size and can store small amounts of data, such
+                    as strings. This data is stored on the user's local machine.</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h1>3.What is event loop? How does work it?</h1>
+        <h3>
+            <p><span style="color: red;">Event Loop:</span> An event loop is something that pulls stuff out of the queue
+                and places it onto the function execution stack whenever the function stack becomes empty.</p>
+            <p><span style="color: red;">Working Process:</span> An event loop is an endless loop, which waits for
+                tasks, executes them, and then sleeps until it receives more tasks. The event loop executes tasks from
+                the event queue only when the call stack is empty i.e. there is no ongoing task. The event loop allows
+                us to use callbacks and promises.</p>
+        </h3>
+
+    </section>
+    <section>
+        <h1>4. Functionalites of  quizTimer() :</h1>
+        <h3>
+            <ol>
+                <li>It envolves totally time related Functionalites.such as: Start or Resume</li>
+            <li>It's trigger the timer to begin counting</li>
+            <li>It performs also paused or stopped functions</li>
+            <li>It also perform resetting Functionality.</li>
+            </ol>
+        </h3>
+    </section>
+    <section>
+        <h1>4. Functionalites of  chooseQuiz() :</h1>
+        <h3>
+            <ol>
+               <li>It takes two parameters.</li>
+               <li>First parameter carry Index of the quiz question.</li>
+               <li>Second parameter carry selected answer from user.</li>
+               <li>After performing upper functionalities ,shows the result in displayAnswers function Which we can see as a result.</li>
+            </ol>
+        </h3>
+    </section>
+    <button id="click-for-main-file" class="go-to-main-html-btn">show main HTML file</button>
+</body>
+
+</html>
